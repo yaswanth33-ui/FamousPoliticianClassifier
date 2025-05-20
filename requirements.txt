@@ -1,0 +1,11 @@
+bing-image-downloader
+scikit-image
+opencv-python
+seaborn
+scikit-learn==1.4.2
+joblib
+numpy
+pandas
+flask
+flask-cors
+pillow
