@@ -73,9 +73,8 @@
             
                     const imageBase64 = await getBase64(currentFile);
                     
-                   
-                    const API_BASE_URL = 'http://localhost:5000';
-                    const response = await fetch(`${API_BASE_URL}/api/classify`, {
+                    // Use the API URL from config
+                    const response = await fetch(`${CONFIG.API_BASE_URL}/api/classify`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',

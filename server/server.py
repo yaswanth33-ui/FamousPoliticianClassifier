@@ -10,6 +10,10 @@ CORS(app)
 
 init_db()
 
+@app.route('/')
+def health_check():
+    return jsonify({"status": "healthy", "message": "Politician Classifier API is running"})
+
 @app.route('/api/classify', methods=['POST'])
 def classify():
     image_data = request.json.get('image_data')
@@ -29,4 +33,6 @@ def get_latest_image_id():
     return latest_id
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    import os
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
