@@ -75,4 +75,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Support
 
-For any issues or questions, please open an issue on the [GitHub repository](https://github.com/yaswanth33-ui/TaskManager.git/issues).
+For any issues or questions, please open an issue on the [GitHub repository](https://github.com/yaswanth33-ui/FamousPoliticianClassifier/issues).
